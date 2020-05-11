@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SYCUa+rTeYu1VWMw8VuhkEYlaDPKdqUjaoLTrLaqQm9vEx2HYE1BFG1PrkFhIaC8UzkU4ghYA2JTijF3+2RCdA==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\slavi\\Desktop\\TaskGit\\TaskApi1b\\TaskApi1b.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\slavi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
