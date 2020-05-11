@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EGncRurs8MW2MfU4RPMQfLANmTbOlJr4YayGOwGlSJkiRSvr5x4mqxYz+2sfwdJSJT6zl/8dtQpJJTDwjTIFUA==",
+  "dgSpecHash": "uj+iPaJ2Yo2dWbbh6uF7PrjMGBGXjc/ckUUvZkuL29F//aB0E4AbxKeMFvgsT8fGxXg+ZZpgOQdYq4Xi2VBPcA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\slavi\\Desktop\\TaskGit\\Shared\\Shared.csproj",
+  "projectFilePath": "C:\\Users\\slavi\\Desktop\\TaskGit\\Shared\\Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\slavi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],

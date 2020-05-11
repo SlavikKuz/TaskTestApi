@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UoJQxpXXUO8GNxH+8KCs6sPOvbw/7xaghxpASLBryXDCzyWEeJxAdXm0bp8Afz4VTkzP+Ke/9jbH57e8TZd8+A==",
+  "dgSpecHash": "6mqN2xStAhlgtt6YRV+WTMJWkQbIvBP79rYo/dj1HRhNBW/kWYq3LuDrtYDpbm3M5pYNUjuynsF+MYZBaenmNQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\slavi\\Desktop\\TaskGit\\TaskApi2d.UI\\TaskApi2d.UI.csproj",
+  "projectFilePath": "C:\\Users\\slavi\\Desktop\\TaskGit\\TaskApi2d.UI\\TaskApi2d.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\slavi\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\slavi\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

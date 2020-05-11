@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\slavi\\Desktop\\TaskGit\\Shared\\Shared.csproj": {}
+    "C:\\Users\\slavi\\Desktop\\TaskGit\\Shared\\Shared.csproj": {}
   },
   "projects": {
-    "c:\\Users\\slavi\\Desktop\\TaskGit\\Shared\\Shared.csproj": {
+    "C:\\Users\\slavi\\Desktop\\TaskGit\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\slavi\\Desktop\\TaskGit\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\slavi\\Desktop\\TaskGit\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "c:\\Users\\slavi\\Desktop\\TaskGit\\Shared\\Shared.csproj",
+        "projectPath": "C:\\Users\\slavi\\Desktop\\TaskGit\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\slavi\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\slavi\\Desktop\\TaskGit\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\slavi\\Desktop\\TaskGit\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
