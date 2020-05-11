@@ -1,0 +1,93 @@
+﻿@model DateFromToViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<div class="text-center">
+    <h1 class="display-4">Simple converter</h1>
+</div>
+
+<form asp-controller="Home" asp-action="GetData">
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <label class="control-label">Date from:</label>
+                <input asp-for="DateFrom" class="form-control" id="dateFrom" />
+                <span asp-validation-for="DateFrom" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label class="control-label">Date to:</label>
+                <input asp-for="DateTo" class="form-control" id="dateTo" />
+                <span asp-validation-for="DateTo" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="form-group">
+                        <input type="button" id="b1" value="Show" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<figure class="highcharts-figure">
+    <div id="container"></div>
+</figure>
+
+<script>
+    $(document).ready(function () {
+        $("#b1").click(function () {
+            let dateFrom = $("#dateFrom").val();
+            let dateTo = $('#dateTo').val();
+
+            $.getJSON(`/Home/GetData?dateFrom=${dateFrom}&dateTo=${dateTo}`, function (data) {
+                var Dates = []
+                var Rates = []
+
+                for (var i = 0; i < data.length; i++) {
+                    Dates.push(data[i].date);
+                    Rates.push(data[i].rate);
+                }
+
+                Highcharts.chart('container', {
+                    chart: {
+                        type: 'line'
+                    },
+                    title: {
+                        text: 'Exchange Rate Over Time'
+                    },
+                    subtitle: {
+                        text: 'Source: TaskApi'
+                    },
+                    xAxis: {
+                        categories: Dates
+                    },
+                    plotOptions: {
+                        line: {
+                            dataLabels: {
+                                enabled: true
+                            },
+                            enableMouseTracking: false
+                        }
+                    },
+                    series: [{
+                        name: 'EUR to NOK',
+                        data: Rates
+                    }]
+                });
+            });
+        });
+    });
+</script>
